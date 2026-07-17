@@ -1,57 +1,312 @@
-# Kuldeep Amreliya — Portfolio (Vol.01)
+# 🚀 Kuldeep Amreliya — Portfolio
 
-Awwwards-style personal portfolio. Kinetic hero, editorial marquee,
-numbered manifesto, spotlight project cards, duotone portrait triptych,
-Lenis smooth scroll, framer-motion micro-interactions.
+> An Awwwards-inspired personal portfolio showcasing my work as an AI/ML Engineer and Full-Stack Developer.
 
-## Getting started
+🌐 **Live Demo:** https://kuldeep-portfolio-rouge.vercel.app
+
+---
+
+# ✨ Overview
+
+This portfolio is built with a modern, minimal, and editorial-inspired design featuring smooth animations, interactive UI elements, and responsive layouts. It highlights my projects, technical skills, professional experience, and education.
+
+## Features
+
+* 🎨 Awwwards-inspired modern UI
+* ⚡ Smooth scrolling with Lenis
+* ✨ Beautiful animations using Framer Motion
+* 📱 Fully responsive design
+* 💼 Dedicated Projects section
+* 🧠 AI/ML & Full-Stack focused portfolio
+* 📄 Resume download
+* 📬 Contact section with social links
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Framer Motion
+* Lenis Smooth Scroll
+
+### Typography
+
+* Clash Display
+* Satoshi
+* Fraunces
+* JetBrains Mono
+
+### Deployment
+
+* Vercel
+
+---
+
+# 📂 Project Structure
+
+```text
+frontend/
+│
+├── public/
+│   ├── images/
+│   └── resume/
+│
+├── src/
+│   ├── components/
+│   ├── lib/
+│   │   └── data.js
+│   ├── pages/
+│   └── App.js
+│
+├── package.json
+└── ...
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
 
 ```bash
-cd frontend
+git clone https://github.com/kuldeep-amreliya/portfolio.git
+cd portfolio/frontend
+```
+
+## Install Dependencies
+
+```bash
 npm install
+```
+
+## Run Development Server
+
+```bash
 npm start
 ```
 
-Opens at http://localhost:3000
+The application will be available at:
 
-## Build for production
+```text
+http://localhost:3000
+```
+
+---
+
+# 📦 Production Build
+
+Generate an optimized production build:
 
 ```bash
-cd frontend
 npm run build
 ```
 
-Output goes to `frontend/build/` — upload that folder's contents to any
-static host (Vercel, Netlify, GitHub Pages, etc).
+The production files will be generated inside:
 
-## Editing your content
+```text
+frontend/build/
+```
 
-Everything text-based (name, roles, projects, skills, experience,
-education, links) lives in one file:
+These files can be deployed to any static hosting platform.
 
-`frontend/src/lib/data.js`
+---
 
-## Replacing images / resume
+# 🌍 Deployment
 
-- Portrait photos: `frontend/public/images/` (portrait-a.jpeg,
-  portrait-b.jpeg, portrait-wide.jpeg) — swap in new files with the
-  same names, or update the paths in `data.js`.
-- Resume PDF: `frontend/public/resume/` — replace the file and update
-  `resumeUrl` in `data.js` if you rename it.
-- Project images currently point to Unsplash stock URLs in `data.js`
-  (`PROJECTS[].image`) — replace with real screenshots any time by
-  swapping the URL or pointing to a local file in `public/images/`.
+The portfolio is deployed on **Vercel**.
 
-## Deploying
+**Live Website**
 
-Easiest options:
-- **Vercel**: `npm i -g vercel`, then `vercel` from the `frontend` folder.
-- **Netlify**: drag-and-drop the `build` folder after `npm run build`.
-- **GitHub Pages**: build, then push `build/` contents to a `gh-pages` branch.
+https://kuldeep-portfolio-rouge.vercel.app
 
-## Notes
+To deploy manually:
 
-- Dark mode only — no light theme toggle, this is the committed art direction.
-- Custom cursor is disabled on mobile/touch (falls back to native cursor).
-- Fonts (Clash Display, Satoshi, Fraunces, JetBrains Mono) load from
-  Fontshare/Google Fonts CDNs — requires internet access on first load.
+```bash
+npm run build
+vercel --prod
+```
+
+If connected to GitHub, Vercel will automatically redeploy whenever changes are pushed to the `main` branch.
+
+---
+
+# ✏️ Customization
+
+Most portfolio content is managed from a single file:
+
+```text
+frontend/src/lib/data.js
+```
+
+## Profile
+
+Update:
+
+* Name
+* Roles
+* Tagline
+* Location
+* Email
+* Phone
+* LinkedIn
+* GitHub
+* Resume URL
+
+---
+
+## Projects
+
+The portfolio currently includes:
+
+### Groot — RAG Document Intelligence
+
+**Tech Stack**
+
+* React.js
+* FastAPI
+* LangGraph
+* FAISS
+* PostgreSQL
+* Redis
+* Qwen 2.5
+
+---
+
+### Fit Readout — Resume × JD Matcher
+
+**Tech Stack**
+
+* React
+* Vite
+* FastAPI
+* Groq LLaMA
+
+---
+
+### CineMind — Movie Recommendation System
+
+**Tech Stack**
+
+* React
+* FastAPI
+* scikit-learn
+* TMDB API
+
+Simply edit the `PROJECTS` array inside `data.js` to update or add new projects.
+
+---
+
+## Skills
+
+Skills are grouped into:
+
+* Languages
+* Backend
+* Frontend
+* AI & GenAI
+* Data
+* Speech
+* Tools
+
+---
+
+## Experience
+
+### AI/ML Engineer Intern
+
+**E-Procurement Technologies Ltd. (Tender Tiger)**
+
+Jan 2026 – Jul 2026
+
+---
+
+### Data & AI Intern
+
+**CSRBOX**
+
+2025
+
+---
+
+## Education
+
+### Bachelor of Engineering (Information Technology)
+
+SAL College of Engineering
+
+Gujarat Technological University (GTU)
+
+2022 – 2026
+
+**CGPA:** 8.68
+
+---
+
+### Higher Secondary Certificate (H.S.C.)
+
+Dipak Shikshan Sankul
+
+---
+
+### Secondary School Certificate (S.S.C.)
+
+Dipak Shikshan Sankul
+
+---
+
+# 🖼 Replacing Images
+
+## Portrait Images
+
+Replace the following files:
+
+```text
+frontend/public/images/
+
+portrait-a.jpeg
+portrait-b.jpeg
+portrait-wide.jpeg
+```
+
+Or update their paths in `data.js`.
+
+---
+
+## Resume
+
+Replace:
+
+```text
+frontend/public/resume/Kuldeep_Amreliya_FullStack.pdf
+```
+
+If the filename changes, update `resumeUrl` in `data.js`.
+
+---
+
+## Project Images
+
+Project images are currently loaded from Unsplash URLs.
+
+Replace the `image` property inside the `PROJECTS` array with your own screenshots whenever desired.
+
+---
+
+# 📬 Contact
+
+📍 Ahmedabad, Gujarat, India
+
+---
+
+# 📄 License
+
+This project is intended for personal portfolio use.
+
+Feel free to fork it for learning purposes, but please provide appropriate attribution if you reuse significant parts of the design or code.
+
+---
+
+⭐ If you like this portfolio, consider giving the repository a **star**.
